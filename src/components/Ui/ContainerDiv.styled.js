@@ -9,4 +9,3 @@ export const ContainerDiv = styled.div`
   font-size: 25px;
   color: #010101;
 `;
-/*display: flex;*/
