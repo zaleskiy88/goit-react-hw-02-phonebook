@@ -1,8 +1,8 @@
 import { Component } from 'react';
-import { Form } from 'ui/Form';
-import { Label } from 'ui/Label';
-import { Input } from 'ui/Input';
-import { Button } from 'ui/Button.styled';
+import { Form } from 'components/ui/Form';
+import { Label } from 'components/ui/Label';
+import { Input } from 'components/ui/Input';
+import { Button } from 'components/ui/Button.styled';
 // ({ inputId, onAddContact })
 
 export class PhonebookForm extends Component {
