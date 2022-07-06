@@ -2,8 +2,6 @@ import { Component } from 'react';
 import { FilterLabel, FilterInput } from './ContactsFilter.styled';
 
 export class ContactsFilter extends Component {
-  state = { filter: '' };
-
   onFilterInputChange = evt => {
     const { value } = evt.currentTarget;
 

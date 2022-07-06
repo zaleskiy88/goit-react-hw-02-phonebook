@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import { nanoid } from 'nanoid';
-import { ContainerDiv } from 'components/Ui/ContainerDiv.styled';
+import { ContainerDiv } from 'components/ui/ContainerDiv.styled';
 import { PhonebookForm } from 'components/PhonebookForm/PhonebookForm';
 import { ContactsList } from 'components/ContactsList/ContactsList';
 import { ContactsFilter } from 'components/ContactsFilter/ContactsFilter';
@@ -16,7 +16,7 @@ export class App extends Component {
     filter: '',
   };
 
-  addContact = (contactName, contactNumber) => {
+  onContactFormSubmit = (contactName, contactNumber) => {
     const { contacts } = this.state;
     const contact = { id: nanoid(), name: contactName, number: contactNumber };
     const normalizedFilterValue = contactName.toLowerCase();
@@ -61,7 +61,7 @@ export class App extends Component {
         <PhonebookForm
           nameInputId={nanoid()}
           numberInputId={nanoid()}
-          onAddContact={this.addContact}
+          onAddContact={this.onContactFormSubmit}
         ></PhonebookForm>
 
         <h2>Contacts</h2>

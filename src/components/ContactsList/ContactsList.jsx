@@ -1,7 +1,6 @@
 import { Component } from 'react';
-import { Button } from 'components/Ui/Button.styled';
+import { Button } from 'components/ui/Button.styled';
 import { ContacItemtLi, ContactsListUl } from './ContactsList.styled';
-import { nanoid } from 'nanoid';
 
 export class ContactsList extends Component {
   render() {
@@ -12,7 +11,7 @@ export class ContactsList extends Component {
         <ContactsListUl>
           {contacts.map(contact => {
             return (
-              <ContacItemtLi key={nanoid()}>
+              <ContacItemtLi key={contact.id}>
                 {contact.name}: {contact.number}
                 <Button onClick={() => onDelete(contact.id)}>Delete</Button>
               </ContacItemtLi>
