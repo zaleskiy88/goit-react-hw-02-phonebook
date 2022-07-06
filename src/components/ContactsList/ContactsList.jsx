@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import { Button } from 'ui/Button.styled';
+import { Button } from 'components/ui/Button.styled';
 import { ContacItemtLi, ContactsListUl } from './ContactsList.styled';
 
 export class ContactsList extends Component {
